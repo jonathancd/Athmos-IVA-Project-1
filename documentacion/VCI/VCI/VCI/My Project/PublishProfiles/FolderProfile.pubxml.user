@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Questo file viene usato dal processo di pubblicazione/creazione pacchetto del progetto Web. È possibile personalizzare il comportamento del processo
+modificando il file MSBuild. Per altre informazioni su questo argomento, vedere https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\Il porco di dio\Desktop\VCI\VCI\bin\Release\PublishOutput</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Acquisizione_dati.aspx">
+      <publishTime>09/13/2017 14:29:12</publishTime>
+    </File>
+    <File Include="bin/VCI.dll">
+      <publishTime>11/28/2017 17:47:43</publishTime>
+    </File>
+    <File Include="bin/VCI.pdb">
+      <publishTime>11/28/2017 17:47:43</publishTime>
+    </File>
+    <File Include="bin/VCI.xml">
+      <publishTime>11/28/2017 17:47:42</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>09/13/2017 14:27:23</publishTime>
+    </File>
+    <File Include="Grazie.aspx">
+      <publishTime>09/12/2017 09:33:56</publishTime>
+    </File>
+    <File Include="Informazioni_Azienda.aspx">
+      <publishTime>10/04/2017 09:15:40</publishTime>
+    </File>
+    <File Include="Informazioni_Azienda_Ori.aspx">
+      <publishTime>10/04/2017 09:14:13</publishTime>
+    </File>
+    <File Include="logo.jpg">
+      <publishTime>09/12/2017 09:08:48</publishTime>
+    </File>
+    <File Include="Risultato_Valutazione.aspx">
+      <publishTime>09/12/2017 09:11:04</publishTime>
+    </File>
+    <File Include="scelta-azienda-curatore.jpg">
+      <publishTime>09/12/2017 15:21:58</publishTime>
+    </File>
+    <File Include="scelta-azienda-inliquidazione.jpg">
+      <publishTime>09/12/2017 15:20:56</publishTime>
+    </File>
+    <File Include="scelta-azienda-normale.jpg">
+      <publishTime>09/12/2017 15:21:44</publishTime>
+    </File>
+    <File Include="Sito.Master">
+      <publishTime>09/11/2017 15:13:54</publishTime>
+    </File>
+    <File Include="style.css">
+      <publishTime>09/12/2017 15:28:44</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/28/2017 17:47:43</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

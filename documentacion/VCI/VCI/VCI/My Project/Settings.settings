@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Setting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">NomeMittente</Value>
+    </Setting>
+    <Setting Name="IndMittente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">info@hubtributario.it</Value>
+    </Setting>
+    <Setting Name="IpServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mail.hubtributario.it</Value>
+    </Setting>
+    <Setting Name="LoginMail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">smtp@hubtributario.it</Value>
+    </Setting>
+    <Setting Name="PwdMail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">T41zi8PqCW</Value>
+    </Setting>
+    <Setting Name="PortaSmtp" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="NomeMittente" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Hub Tributario</Value>
+    </Setting>
+    <Setting Name="OggettoMail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Valutazione Vostri Crediti Iva</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

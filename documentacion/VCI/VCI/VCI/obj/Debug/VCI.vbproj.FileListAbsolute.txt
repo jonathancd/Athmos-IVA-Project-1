@@ -1,0 +1,20 @@
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\bin\VCI.dll.config
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\bin\VCI.dll
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\bin\VCI.pdb
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\bin\VCI.xml
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\obj\Debug\VCI.Resources.resources
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\obj\Debug\VCI.vbproj.GenerateResource.Cache
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\obj\Debug\VCI.dll
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\obj\Debug\VCI.xml
+C:\Progetti Attivi\Clienti\Naos\VCI\VCI\obj\Debug\VCI.pdb
+C:\Users\Il porco di dio\Desktop\VCI\VCI\bin\VCI.dll.config
+C:\Users\Il porco di dio\Desktop\VCI\VCI\bin\VCI.dll
+C:\Users\Il porco di dio\Desktop\VCI\VCI\bin\VCI.pdb
+C:\Users\Il porco di dio\Desktop\VCI\VCI\bin\VCI.xml
+C:\Users\Il porco di dio\Desktop\VCI\VCI\obj\Debug\VCI.vbprojResolveAssemblyReference.cache
+C:\Users\Il porco di dio\Desktop\VCI\VCI\obj\Debug\VCI.Resources.resources
+C:\Users\Il porco di dio\Desktop\VCI\VCI\obj\Debug\VCI.vbproj.GenerateResource.Cache
+C:\Users\Il porco di dio\Desktop\VCI\VCI\obj\Debug\VCI.vbproj.CoreCompileInputs.cache
+C:\Users\Il porco di dio\Desktop\VCI\VCI\obj\Debug\VCI.dll
+C:\Users\Il porco di dio\Desktop\VCI\VCI\obj\Debug\VCI.xml
+C:\Users\Il porco di dio\Desktop\VCI\VCI\obj\Debug\VCI.pdb

@@ -1,0 +1,500 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VCI
+</name>
+</assembly>
+<members>
+<member name="T:VCI.My.MyWebExtension">
+ <summary>
+ Modulo utilizzato per definire le proprietà disponibili nello spazio dei nomi My per i progetti Web.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:VCI.My.MyWebExtension.Computer">
+ <summary>
+ Restituisce informazioni sul computer host.
+ </summary>
+</member>
+<member name="P:VCI.My.MyWebExtension.User">
+ <summary>
+ Restituisce informazioni sull'utente Web corrente.
+ </summary>
+</member>
+<member name="P:VCI.My.MyWebExtension.Request">
+ <summary>
+ Restituisce l'oggetto Request.
+ </summary>
+</member>
+<member name="P:VCI.My.MyWebExtension.Response">
+ <summary>
+ Restituisce l'oggetto Response.
+ </summary>
+</member>
+<member name="P:VCI.My.MyWebExtension.Log">
+ <summary>
+ Restituisce l'oggetto AspLog.
+ </summary>
+</member>
+<member name="F:VCI.Acquisizione_dati1._DDL_Classe_Fatt">
+<summary>
+Controllo DDL_Classe_Fatt.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._CV4">
+<summary>
+Controllo CV4.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._DDL_TIpo_IMporto">
+<summary>
+Controllo DDL_TIpo_IMporto.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._TXT_Credito">
+<summary>
+Controllo TXT_Credito.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._CV1">
+<summary>
+Controllo CV1.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._DDL_Prov_Sede_Legale">
+<summary>
+Controllo DDL_Prov_Sede_Legale.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._Sql_prov">
+<summary>
+Controllo Sql_prov.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._CV5">
+<summary>
+Controllo CV5.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._TXT_Iva_Richiesta">
+<summary>
+Controllo TXT_Iva_Richiesta.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._rf1">
+<summary>
+Controllo rf1.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._CV6">
+<summary>
+Controllo CV6.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._TXT_Data">
+<summary>
+Controllo TXT_Data.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._rf2">
+<summary>
+Controllo rf2.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._dateValidator">
+<summary>
+Controllo dateValidator.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._DDL_Modello_Iva">
+<summary>
+Controllo DDL_Modello_Iva.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._SQL_Anno">
+<summary>
+Controllo SQL_Anno.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._CV7">
+<summary>
+Controllo CV7.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._DDL_Piva">
+<summary>
+Controllo DDL_Piva.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Acquisizione_dati1._CMD_Prosegui">
+<summary>
+Controllo CMD_Prosegui.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._TXT_Email_Rif">
+<summary>
+Controllo TXT_Email_Rif.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._RFV3">
+<summary>
+Controllo RFV3.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._regexEmailValid">
+<summary>
+Controllo regexEmailValid.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._TXT_Tel">
+<summary>
+Controllo TXT_Tel.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._RFV7">
+<summary>
+Controllo RFV7.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._CV1">
+<summary>
+Controllo CV1.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._TXT_Pers_Rif">
+<summary>
+Controllo TXT_Pers_Rif.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._RFV8">
+<summary>
+Controllo RFV8.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda1._CMD_Prosegui">
+<summary>
+Controllo CMD_Prosegui.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._TXT_Società">
+<summary>
+Controllo TXT_Società.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RFV1">
+<summary>
+Controllo RFV1.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._TXT_CodFisc">
+<summary>
+Controllo TXT_CodFisc.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RFV2">
+<summary>
+Controllo RFV2.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._TXT_Legale_Rappr">
+<summary>
+Controllo TXT_Legale_Rappr.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RFV4">
+<summary>
+Controllo RFV4.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._TXT_Procuratore">
+<summary>
+Controllo TXT_Procuratore.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RFV5">
+<summary>
+Controllo RFV5.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._TXT_Email_Rif">
+<summary>
+Controllo TXT_Email_Rif.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RFV3">
+<summary>
+Controllo RFV3.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._regexEmailValid">
+<summary>
+Controllo regexEmailValid.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._TXT_Pec">
+<summary>
+Controllo TXT_Pec.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RFV6">
+<summary>
+Controllo RFV6.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RegularExpressionValidator1">
+<summary>
+Controllo RegularExpressionValidator1.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._TXT_Tel">
+<summary>
+Controllo TXT_Tel.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RFV7">
+<summary>
+Controllo RFV7.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._CV1">
+<summary>
+Controllo CV1.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._TXT_Pers_Rif">
+<summary>
+Controllo TXT_Pers_Rif.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._RFV8">
+<summary>
+Controllo RFV8.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Informazioni_Azienda_Ori._CMD_Prosegui">
+<summary>
+Controllo CMD_Prosegui.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Risultato_Valutazione1._CMD_Prosegui">
+<summary>
+Controllo CMD_Prosegui.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Sito._form1">
+<summary>
+Controllo form1.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+<member name="F:VCI.Sito._CP1">
+<summary>
+Controllo CP1.
+</summary>
+<remarks>
+Campo generato automaticamente.
+Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+</remarks>
+</member>
+</members>
+</doc>

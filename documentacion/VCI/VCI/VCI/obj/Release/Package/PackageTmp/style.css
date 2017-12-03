@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    color: #757575;
+}
+
+*{margin:0;padding:0}
+		#alepagewrap {
+	background: #e9e7e7;
+	color: #757575;
+	width: 978px;
+	max-width: 96%;
+	margin: 0 auto;
+	padding:5px
+}
+		.alewrapper {overflow: hidden;}
+		h3{margin-bottom:10px;}
+		
+		.alecol{background: #e9e7e7;float: left;margin-bottom: 30px;}
+		.alefullwidth .col {float: none;margin-left: 0;}
+		
+		/* alegrid4 col */
+		.alegrid4 .alecol {float: none;width: 22.6%;}
+		
+		/* alegrid3 col */
+		.alegrid3 .alecol {width: 31.2%;}
+		
+		/* alegrid2 col */
+		.alegrid2 .alecol {width: 48.4%;}
+		
+		/* clear col */
+		.alegrid4 .alecol:nth-of-type(4n+1),
+		.alegrid3 .alecol:nth-of-type(3n+1),
+		.alegrid2 .alecol:nth-of-type(2n+1) {
+			margin-left: 0;
+			clear: left;
+		}
+		/* reset cols to 3-column */
+		@media screen and (max-width: 740px) {
+			/* grid4 */
+			.alegrid4 .alecol {
+				width: 31.2%;
+			}
+			.alegrid4 .alecol:nth-of-type(4n+1) {
+				margin-left: 3.2%;
+				clear: none;
+			}
+			.alegrid4 .alecol:nth-of-type(3n+1) {
+				margin-left: 0;
+				clear: left;
+			}
+		}
+		
+		/* reset cols to 2-column */
+		@media screen and (max-width: 600px) {
+			/* grid4 */
+			.alegrid4 .alecol {
+				width: 48.4%;
+			}
+			.alegrid4 .alecol:nth-of-type(3n+1) {
+				margin-left: 3.2%;
+				clear: none;
+			}
+			.alegrid4 .alecol:nth-of-type(2n+1) {
+				margin-left: 0;
+				clear: left;
+			}
+		
+			/* grid3 */
+			.alegrid3 .alecol {
+				width: 48.4%;
+			}
+			.alegrid3 .alecol:nth-of-type(3n+1) {
+				margin-left: 3.2%;
+				clear: none;
+			}
+			.alegrid3 .alecol:nth-of-type(2n+1) {
+				margin-left: 0;
+				clear: left;
+			}
+		}
+		
+		/* reset cols to fullwidth */
+		@media screen and (max-width: 400px) {
+			/* grid4 */
+			.alecol {
+				width: 100% !important;
+				margin-left: 0 !important;
+				clear: none !important;
+			}
+		}
+        #alepagewrap .alewrapper.alefullwidth .alegrid4 .alegrid3 .alegrid2 .alecol {
+	font-family: Verdana, Geneva, sans-serif; color: #757575;
+}
+#alepagewrap .alewrapper.alefullwidth .alecol {
+	font-family: Verdana, Geneva, sans-serif; color: #757575;
+}
+#alepagewrap .alewrapper.alegrid2 .alecol {
+	font-family: Verdana, Geneva, sans-serif; color: #757575;
+}
