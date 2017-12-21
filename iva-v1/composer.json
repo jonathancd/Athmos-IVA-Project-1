@@ -6,6 +6,7 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "caouecs/laravel-lang": "~3.0",
         "laravel/framework": "5.3.*",
         "nesbot/carbon": "^1.22"
     },
@@ -23,7 +24,10 @@
         ],
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "classmap": [

@@ -3,6 +3,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+
+    <meta name="description" content="System to calculate the times and the amount of refunds for companies">
+    <meta name="author" content="Jonathan Cuotto">
+
     <!-- Viewport Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
@@ -48,7 +52,7 @@
 
         .business-type{
           border: 1px solid lightgray;
-          min-height: 251px;
+          min-height: 215px;
           padding: 25px;
         }
         .business-type:hover{
@@ -60,12 +64,19 @@
         }
 
         .section {
-          padding: 75px 0;
+          padding: 90px 0;
         }
 
         .tab-pane{
           padding: 50px 10px;
         }
+
+        .justify-95{
+          margin: auto;
+          text-align: justify!important;
+          width: 95%;
+        }
+
 
         .left-inner-addon {
             position: relative;
@@ -93,6 +104,44 @@
             pointer-events: none;
             z-index: 1!important;
         }
+
+
+
+        @media only screen and (max-width: 1200px) {
+          .business-type{
+            min-height: 250px;
+          }
+        }
+
+        @media only screen and (max-width: 1024px) and (min-width: 768px) {
+          .business-type{
+            min-height: 266px;
+          }
+          .service-item{
+            margin: 20px 0px!important;
+          }
+        }
+
+
+        @media only screen and (max-width: 768px) and (min-width: 545px) {
+          .business-type{
+            min-height: 250px;
+            width: 33%;
+            word-wrap: break-word;
+          }
+          .service-item{
+            
+            margin: 5px 0px!important;
+          }
+          .service-item h2{
+            font-size: 16px!important;
+          }
+        }
+
+        
+
+
+
     </style>
 
 
@@ -129,8 +178,9 @@
                 </li>                                     
 
                 <li class="nav-item dropdown">
-                  <a class="nav-link" href="{{url('/documents')}}" role="button" aria-haspopup="true" aria-expanded="false">
-                    Documents
+                  <a class="nav-link" href="{{url('/documenti')}}" role="button" aria-haspopup="true" aria-expanded="false">
+                    <!-- Documenti -->
+                    {{App\Translation::getTranslation('documents')}}
                   </a>
                 </li>          
                  
@@ -180,10 +230,7 @@
                   <a class="nav-link active" href="{{url('/')}}">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Privacy Policy</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Terms of services</a>
+                  <a class="nav-link" href="{{url('/privacy-policy')}}">Privacy Policy</a>
                 </li>
               </ul>        
             </div>

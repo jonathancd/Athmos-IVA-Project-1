@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Rimborso extends Model
 {
 
-	public static function giorni_rimborso($table_result, $modello){
+	public static function giorni_rimborso_snc_ltd($table_result, $modello){
 		switch($modello){
     		case 1:
     			$result = $table_result->fatturato_0_30;
@@ -20,8 +20,29 @@ class Rimborso extends Model
     			break;
     	}
 
-    	return $result;
+    	if(!empty($result))
+            return $result;
+
+        return 0;
 	}
+
+
+    public static function giorni_rimborso_consultant($table_result, $iva){
+        if($iva < 30000){
+            $result = $table_result->fatturato_0_30;
+        }
+        else if($iva >= 30000 && $iva < 100000)
+            $result = $table_result->fatturato_30_100;
+        else{
+            $result = $table_result->fatturato_100;
+        }
+
+        if(!empty($result))
+            return $result;
+
+        return 0;
+    }
+
 
     public static function evaluation_active_snc_ltd ($iva, $giorni_rimborso){
 

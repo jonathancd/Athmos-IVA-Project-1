@@ -12,7 +12,7 @@
         <div class="row">
           <div class="page-header-area">
             <div class="page-header-content">
-              <h2>Business consultant or a receiver</h2>
+              <h2>{{App\Translation::getTranslation('consultant_receiver_title')}}</h2>
             </div>
           </div>
         </div>
@@ -26,10 +26,8 @@
       <!-- Container Starts -->
       <div class="container">
         <div class="row">        
-          <!-- <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s"> -->
-           <!-- Fill the data to receive our evaluation -->
-          <!-- </h1> -->
-          <p class="section-subcontent">Fill the data to receive our evaluation</p>
+
+          <p class="section-subcontent">{{App\Translation::getTranslation('complete_form')}}</p>
          
 
           <form  action="{{url('/giorni-rimborso/3/authorization')}}" method="post"  class="form-content fadeIn animated">
@@ -45,7 +43,7 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>Ammontare del Credito IVA risultanti da dichiarazione IVA ex ART. 74bis di inizio procedura concorsuale</label>
+                        <label>{{App\Translation::getTranslation('lbl_art47')}}</label>
                         
                         <div class="col-md-12" style="padding-left: 0px;">
 
@@ -61,7 +59,7 @@
     	                    <div class="col-md-6">
     	                        <div class="left-inner-addon">
     	                            <i class="fa fa-eur" aria-hidden="true"></i>
-    	                            <input type="text"  min="0.1" name="art74" class="form-control art-74"  value="{{ old('art74') }}" placeholder="Esempio: 450.5">
+    	                            <input type="text"  min="0.1" name="art74" class="form-control art-74"  value="{{ old('art74') }}" placeholder="{{App\Translation::getTranslation('placeholder_example')}}: 450.5">
     	                        </div>
 
     	                        <span class="text-danger" style="font-size: 13px;">{{ $errors->first('art74') }}</span>
@@ -75,7 +73,7 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Provincia sede legale</label>
+                        <label>{{App\Translation::getTranslation('lbl_province')}}</label>
                         <select name="provincia" class="form-control">
                             @foreach(App\Provincia::all() as $provincia)
                               <option value="{{$provincia->id}}">{{$provincia->name}}</option>
@@ -91,8 +89,8 @@
                   <!-- <div class="row"> -->
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Ammontare IVA</label>
-                        <!-- <input type="text" name="iva" class="form-control"  value="{{ old('iva') }}"> -->
+                        <label>{{App\Translation::getTranslation('lbl_iva')}}</label>
+
                         <div class="left-inner-addon">
                             <i class="fa fa-eur" aria-hidden="true"></i>
                             <input type="text" min="0.1" name="iva" class="form-control ammontare-iva"  value="{{ old('iva') }}">
@@ -107,10 +105,12 @@
                   <!-- <div class="row"> -->
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Modello IVA</label>
+                        <label>{{App\Translation::getTranslation('lbl_iva_model')}}</label>
                         <select name="modello" class="form-control">
                           @foreach(App\Year::all() as $year)
-                            <option value="{{$year->id}}">IVA {{$year->year}}</option>
+                            <option value="{{$year->id}}">
+                              {{App\Translation::getTranslation('lbl_iva_word')}} {{$year->year}}
+                            </option>
                           @endforeach
                         </select>
 
@@ -121,17 +121,17 @@
 
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label>Stato Partita IVA</label>
+                      <label>{{App\Translation::getTranslation('lbl_iva_status')}}</label>
                       
                       <div style="display: inline-block; margin: 0px 25px;">
                         <label class="form-check-label">
-                          <input class="form-check-input" type="radio" name="stato" id="inlineRadio1" value="1"> Aperta
+                          <input class="form-check-input" type="radio" name="stato" id="inlineRadio1" value="1"> {{App\Translation::getTranslation('radio_open')}}
                         </label>
                       </div>
 
                       <div style="display: inline-block;">
                         <label class="form-check-label">
-                          <input class="form-check-input" type="radio" name="stato" id="inlineRadio2" value="0"> Chiusa
+                          <input class="form-check-input" type="radio" name="stato" id="inlineRadio2" value="0"> {{App\Translation::getTranslation('radio_closed')}}
                         </label>
                       </div>  
                       
@@ -144,7 +144,9 @@
                   <div class="row">
                     <div class="col-md-12">
                       <br>
-                      <button id="btn-continue" class="btn btn-hub">Continue</button>
+                      <button id="btn-continue" class="btn btn-hub">
+                        {{App\Translation::getTranslation('btn_continue')}}
+                      </button>
                     </div>
                   </div>
                 </div>

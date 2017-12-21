@@ -1,5 +1,6 @@
 @extends('template')
 
+
 @section('title')
     Calculate your Giorni Rimborso
 @endsection
@@ -11,7 +12,7 @@
         <div class="row">
           <div class="page-header-area">
             <div class="page-header-content">
-              <h2>Active S.N.C. or LTD</h2>
+              <h2>{{App\Translation::getTranslation('active_snc_ltd_title')}}</h2>
             </div>
           </div>
         </div>
@@ -21,15 +22,12 @@
 
 
 @section('container')
-
     <section id="page2" class="section">
       <!-- Container Starts -->
       <div class="container">
         <div class="row">        
-          <!-- <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s"> -->
-           <!-- Fill the data to receive our evaluation -->
-          <!-- </h1> -->
-          <p class="section-subcontent">Fill the data to receive our evaluation</p>
+
+          <p class="section-subcontent">{{App\Translation::getTranslation('complete_form')}}</p>
          
 
           <form action="{{url('/giorni-rimborso/1/authorization')}}" method="post" class="form-content fadeIn animated">
@@ -38,14 +36,13 @@
 
             <div class="bg-gray-200">
               <div class="card-body">
-                <!-- <h5 class="card-body-title">Fill the data to receive our evaluation</h5> -->
-
+              
                 <div>
 
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label>Classe di fatturato precedente</label>
+                        <label>{{App\Translation::getTranslation('lbl_previous_class')}}</label>
                         <select name="fatturato" class="form-control">
                           <option value="1">0 - 30 k</option>
                           <option value="2">30 - 100 k</option>
@@ -60,7 +57,7 @@
                   <!-- <div class="row"> -->
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label>Provincia sede legale</label>
+                        <label>{{App\Translation::getTranslation('lbl_province')}}</label>
                         <!-- <select name="provincia" class="form-control">
                           <option value="Agrigento">Agrigento</option>
                           <option value="Alessandria">Alessandria</option>
@@ -187,11 +184,11 @@
                   <div class="row">
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Ammontare IVA</label>
+                        <label>{{App\Translation::getTranslation('lbl_iva')}}</label>
                         <!-- <input type="text" name="iva" class="form-control"  value="{{ old('iva') }}"> -->
                         <div class="left-inner-addon">
                             <i class="fa fa-eur" aria-hidden="true"></i>
-                            <input type="text" min="0.1" name="iva" class="form-control ammontare-iva"  value="{{ old('iva') }}" placeholder="Esempio: 450.5">
+                            <input type="text" min="0.1" name="iva" class="form-control ammontare-iva"  value="{{ old('iva') }}" placeholder="{{App\Translation::getTranslation('placeholder_example')}}: 450.5">
                         </div>
 
                         <span class="text-danger" style="font-size: 13px;">{{ $errors->first('iva') }}</span>
@@ -204,10 +201,10 @@
                     <div class="col-md-4">
 
                       <div class="form-group">
-                        <label>Data rimborso</label>
+                        <label>{{App\Translation::getTranslation('lbl_date')}}</label>
                         <div class="left-inner-addon">
                           <i class="fa fa-calendar" aria-hidden="true"></i>
-                          <input type="text" class="form-control fc-datepicker" value="{{ old('date') }}" name="date" placeholder="GG-MM-AAAA" required>
+                          <input type="text" class="form-control fc-datepicker" value="{{ old('date') }}" name="date" placeholder="{{App\Translation::getTranslation('placeholder_date')}}" required>
 
                           <span class="text-danger" style="font-size: 13px;">{{ $errors->first('date') }}</span>
                         </div>
@@ -220,10 +217,12 @@
                   <!-- <div class="row"> -->
                     <div class="col-md-4">
                       <div class="form-group">
-                        <label>Modello IVA</label>
+                        <label>{{App\Translation::getTranslation('lbl_iva_model')}}</label>
                         <select name="modello" class="form-control">
                           @foreach(App\Year::all() as $year)
-                            <option value="{{$year->id}}">IVA {{$year->year}}</option>
+                            <option value="{{$year->id}}">
+                              {{App\Translation::getTranslation('lbl_iva_word')}}  {{$year->year}}
+                            </option>
                           @endforeach
                         </select>
 
@@ -236,7 +235,9 @@
                   <div class="row">
                     <div class="col-md-12">
                       <br>
-                      <button id="btn-continue" class="btn btn-hub">Continue</button>
+                      <button id="btn-continue" class="btn btn-hub">
+                        {{App\Translation::getTranslation('btn_continue')}}
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -253,12 +254,7 @@
         </div>
       </div><!-- Container Ends -->
     </section>
-
-    <script type="text/javascript">
-        // Datepicker
-
-
-    </script>
+    
 @endsection
 
 

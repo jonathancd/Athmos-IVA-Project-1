@@ -13,7 +13,8 @@
         <div class="row">
           <div class="page-header-area">
             <div class="page-header-content">
-              <h2>WHAT ARE YOU?</h2>
+              <!-- <h2>Seleziona la tipologia di azienda</h2> -->
+              <h2>{{App\Translation::getTranslation('home_title')}}</h2>
             </div>
           </div>
         </div>
@@ -27,11 +28,6 @@
       <!-- Container Starts -->
       <div class="container">
         <div class="row">        
-          <!-- <h1 class="section-title wow fadeIn animated" data-wow-delay=".2s"> -->
-           <!-- WHAT ARE YOU? -->
-          <!-- </h1> -->
-          <p class="section-subcontent">Select your type of business</p>
-         
 
           <div class="col-sm-6 col-md-4 business-type">
             <!-- Service-Block-1 Item Starts -->
@@ -44,12 +40,10 @@
                   </i>
                 </div>
                 <h2>
-                  I'm a active s.n.c. <br> or ltd
+                  <!-- SPA o SRL in normale attività.  -->
+                  {{App\Translation::getTranslation('active_snc_ltd')}}
+                  <br>
                 </h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
-                </p>
-
                 </div>
             </a>
             <!-- Service-Block-1 Item Ends -->
@@ -65,11 +59,9 @@
                     </i>
                   </div>
                   <h2>
-                    I'm a s.n.c. <br>or ltd on closeout
+                    <!-- SPA o SRL in liquidazione -->
+                    {{App\Translation::getTranslation('closeout_snc_ltd')}}
                   </h2>
-                  <p>
-                    Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor.
-                  </p>
                 </div>
             </a>
             <!-- Service-Block-1 Item Ends -->
@@ -85,11 +77,9 @@
                     </i>
                   </div>
                   <h2>
-                    I'm a business consultant <br> or a receiver
+                    <!-- CURATORE o COMMISSARIO di società in fallimento o in concordato -->
+                    {{App\Translation::getTranslation('consultant_receiver')}}
                   </h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat Quidem!
-                  </p>
                 </div>
             </a>
           </div><!-- Service-Block-1 Item Ends -->

@@ -16,6 +16,8 @@ use App\Provincia;
 use App\Provincia_Year;
 use App\Year;
 
+use App\Translation;
+
 use Carbon\Carbon;
 
 class HomeController extends Controller
@@ -66,8 +68,6 @@ class HomeController extends Controller
 			    ->withInput();
 		} else {
 
-			// return view('giorni_rimborso.authorization', ['evaluation' => $evaluation, 'type' => $type, 'request' => $request->all()]);
-
 			$token = $request->input('token');
 			$rimborso = Rimborso::where('token', $token)->first();
 
@@ -90,7 +90,7 @@ class HomeController extends Controller
 
 	            	$table_result = Provincia_Year::where(['id_year' => $rimborso->modello, 'id_provincia' => $rimborso->provincia])->first();
 
-	            	$giorni_rimborso = Rimborso::giorni_rimborso($table_result,$rimborso->fatturato);
+	            	$giorni_rimborso = Rimborso::giorni_rimborso_snc_ltd($table_result,$rimborso->fatturato);
 	            	$evaluation = Rimborso::evaluation_active_snc_ltd($rimborso->iva, $giorni_rimborso);
 
 					break;
@@ -106,7 +106,7 @@ class HomeController extends Controller
 
 	            	$table_result = Provincia_Year::where(['id_year' => $rimborso->modello, 'id_provincia' => $rimborso->provincia])->first();
 
-	            	$giorni_rimborso = Rimborso::giorni_rimborso($table_result,$rimborso->fatturato);
+	            	$giorni_rimborso = Rimborso::giorni_rimborso_snc_ltd($table_result,$rimborso->fatturato);
 	            	$evaluation = Rimborso::evaluation_closeout_snc_ltd($rimborso->iva, $giorni_rimborso, $rimborso->stato);
 
 					break;
@@ -121,8 +121,9 @@ class HomeController extends Controller
 					$rimborso->stato = $request->input('stato');
 
 
-					$giorni_rimborso = 200;
+					$table_result = Provincia_Year::where(['id_year' => $rimborso->modello, 'id_provincia' => $rimborso->provincia])->first();
 
+					$giorni_rimborso = Rimborso::giorni_rimborso_consultant($table_result,$rimborso->fatturato);
 					$evaluation = Rimborso::evaluation_consultant_receiver($rimborso->iva, $rimborso->art74, $giorni_rimborso, $rimborso->stato);
 
 					break;
@@ -133,11 +134,6 @@ class HomeController extends Controller
         	$rimborso->save();
 
 			return Redirect::route('confirm', ['token' => $token]);
-
-			// return  redirect('/giorni-rimborso/authorization/confirm')
-				// ->with( 'evaluation', $evaluation )
-				// ->with( 'type', $type )
-				// ->with( 'request', $request->all() );
 		}
 
     }
@@ -200,7 +196,7 @@ class HomeController extends Controller
 													'email' => $email
 												]);
 
-			Mail::send('email.index',
+			if(Mail::send('email.index',
 				[
 					'data' => $request->all(),
 					'rimborso' => $rimborso,
@@ -215,9 +211,11 @@ class HomeController extends Controller
 		            	->subject('Evaluation '.$email->date.'-'.$email->id);
 
 		            $m->attachData($pdf->output(), 'Evaluation '.$email->date.'-'.$email->id.'.pdf');
-	        });
+	        })){
+				return redirect('/documenti')->with('status', Translation::getTranslation('email_pdf_message_sent_error'));
+	        }
 
-	        Mail::send('email.index',
+	        if(Mail::send('email.index',
 				[
 					'data' => $request->all(),
 					'rimborso' => $rimborso,
@@ -232,16 +230,17 @@ class HomeController extends Controller
 		            	->subject('Evaluation '.$email->date.'-'.$email->id);
 
 		           	$m->attachData($pdf->output(), 'Evaluation '.$email->date.'-'.$email->id.'.pdf');
-	        });
+	        })){
+	        	return redirect('/documenti')->with('status', Translation::getTranslation('email_pdf_message_sent_error'));
+	        }
 
 
 
 			$rimborso->delete();
 
-    		return redirect('/documents')->with('status', 'An email has been sended successfully');
+    		return redirect('/documenti')->with('status', Translation::getTranslation('email_pdf_message_sent'));
     	}
     }
-
 
 
 }

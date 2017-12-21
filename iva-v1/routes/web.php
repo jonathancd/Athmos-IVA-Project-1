@@ -15,8 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/documents', function(){
+Route::get('/documenti', function(){
 	return view('documents');
+});
+
+
+Route::get('/privacy-policy', function(){
+	return view('policy');
 });
 
 
