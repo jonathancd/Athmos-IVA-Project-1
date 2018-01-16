@@ -20,6 +20,7 @@ class Rimborso extends Model
     			break;
     	}
 
+
     	if(!empty($result))
             return $result;
 
@@ -46,7 +47,17 @@ class Rimborso extends Model
 
     public static function evaluation_active_snc_ltd ($iva, $giorni_rimborso){
 
-    	return $iva * (1 - ($giorni_rimborso/365) * 0.12);
+    	$result = $iva * (1 - ($giorni_rimborso/365) * 0.12);
+
+    	if(!empty($result)){
+    		if($result >= 0)
+    			return $result;
+    		else
+    			return 0;
+    	}else{
+    		return 0;
+    	}
+
     }
 
 
@@ -54,15 +65,22 @@ class Rimborso extends Model
 
     	switch ($flag) {
             case 1:
-            	$x = $iva * (1 - ($giorni_rimborso/365) * 0.14);
+            	$result = $iva * (1 - ($giorni_rimborso/365) * 0.14);
 			break;
 
             case 0:
-            	$x = $iva * (1 - ( ($giorni_rimborso + 180) /365) * 0.14);
+            	$result = $iva * (1 - ( ($giorni_rimborso + 180) /365) * 0.14);
             break;
         }
 
-        return $x;
+        if(!empty($result)){
+    		if($result >= 0)
+    			return $result;
+    		else
+    			return 0;
+    	}else{
+    		return 0;
+    	}
     }
 
 
@@ -70,14 +88,21 @@ class Rimborso extends Model
 
     	switch ($flag) {
             case 1:
-            	$x = $art74 * (1 - ($giorni_rimborso/365) * 0.16);
+            	$result = $art74 * (1 - ($giorni_rimborso/365) * 0.16);
 			break;
 
             case 0:
-            	$x = ($iva - $art74) * (1 - (($giorni_rimborso + 180) / 365) * 0.16);
+            	$result = ($iva - $art74) * (1 - ( ($giorni_rimborso + 180) / 365) * 0.16);
             break;
         }
 
-        return $x;
+        if(!empty($result)){
+    		if($result >= 0)
+    			return $result;
+    		else
+    			return 0;
+    	}else{
+    		return 0;
+    	}
     }
 }
