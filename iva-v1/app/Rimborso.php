@@ -58,7 +58,7 @@ class Rimborso extends Model
 			break;
 
             case 0:
-            	$x = $iva * (1 - ($giorni_rimborso + 180/365) * 0.14);
+            	$x = $iva * (1 - ( ($giorni_rimborso + 180) /365) * 0.14);
             break;
         }
 
@@ -74,7 +74,7 @@ class Rimborso extends Model
 			break;
 
             case 0:
-            	$x = ($iva - $art74) * (1 - ($giorni_rimborso + 180/365) * 0.16);
+            	$x = ($iva - $art74) * (1 - (($giorni_rimborso + 180) / 365) * 0.16);
             break;
         }
 

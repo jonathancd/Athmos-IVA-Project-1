@@ -21,16 +21,16 @@ class CreateRimborsoTable extends Migration
             
             $table->string('fatturato')->nullable();
             $table->string('provincia')->nullable();
-            $table->float('iva')->nullable();
+            $table->string('iva')->nullable();
             $table->datetime('date')->nullable();
             $table->integer('modello')->nullable();
 
             $table->integer('stato')->nullable();
             $table->string('credit')->nullable();
-            $table->float('art74')->nullable();
+            $table->string('art74')->nullable();
 
             $table->integer('giorni_rimborso')->nullable();
-            $table->float('evaluation')->nullable();
+            $table->string('evaluation')->nullable();
             $table->timestamps();
         });
     }
